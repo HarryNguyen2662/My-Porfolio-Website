@@ -1,9 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://hamishw.com",
+  "homepage": "https://harrynguyen2662.github.io/My-Porfolio-Website/",
   "description": "Portfolio site for Harry Nguyen",
-  "repository": "https://github.com/HarryNguyen2662/My-Porfolio-Website2.git",
+  "repository": "https://github.com/HarryNguyen2662/My-Porfolio-Website.git",
   "author": "Harry Nguyen <toantoan123toantoan@gmail.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
@@ -58,8 +58,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export -o build/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
-    "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",
     "deploy:functions": "cd functions && npm run deploy",
     "start": "next start",
