@@ -57,7 +57,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o build/",
+    "build": "next build ",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
