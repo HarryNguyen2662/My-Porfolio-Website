@@ -57,7 +57,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="https://drive.google.com/file/d/1-XOIlrUa-Tcfh4N4oABXInPA1CE6OcVm/view?usp=share_link"
+                href="https://drive.google.com/file/d/1gkyWeJC4Pvo8ZhHAoI7RNKfVUtxRhHMc/view?usp=sharing"
                 icon="send"
               >
                 My resume
